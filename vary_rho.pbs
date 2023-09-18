@@ -1,0 +1,15 @@
+#PBS -N reconstructing_solvers           # job name
+#PBS -A GT-fschaefer7               # account to which job is charged, ex: GT-gburdell3
+#PBS -l nodes=1:ppn=24           # number of nodes and cores per node required
+#PBS -l pmem=4gb                # memory per core
+#PBS -l walltime=72:00:00          # duration of the job (ex: 15 min)
+#PBS -j oe                      # combine output and error messages into 1 file
+#PBS -o vary_rho_24_c.out       # output file name
+#PBS -m abe                     # event notification, set to email on start, end, or fail
+#PBS -M florian.schaefer@cc.gatech.edu  # email to send notifications to
+
+cd $PBS_O_WORKDIR 
+
+module load gcc/8.3.0
+module load julia/1.6.1
+julia --threads=4 --project=. ./src/vary_rho.jl

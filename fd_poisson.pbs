@@ -1,0 +1,18 @@
+#PBS -N reconstructing_solvers           # job name
+#PBS -A GT-fschaefer7-postpaid               # account to which job is charged, ex: GT-gburdell3
+#PBS -l nodes=1:ppn=24           # number of nodes and cores per node required
+#PBS -l pmem=31gb                # memory per core
+#PBS -l walltime=96:00:00          # duration of the job (ex: 15 min)
+#PBS -j oe                      # combine output and error messages into 1 file
+#PBS -o fd_poisson.out       # output file name
+
+cd $PBS_O_WORKDIR 
+module load gcc julia 
+
+N=100
+D=3
+BOUNDARY="neumann"
+POTENTIAL="random_mild"
+COEFFICIENTS="random_severe"
+
+julia --threads=24 --project=. ./src/vary_rho_fd_poisson.jl --n $N --d $D --boundary $BOUNDARY --coefficients $COEFFICIENTS --potential $POTENTIAL

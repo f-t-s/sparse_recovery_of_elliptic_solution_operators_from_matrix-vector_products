@@ -1,0 +1,2881 @@
+---------------------------------------
+Begin PBS Prologue Thu Sep 29 19:17:17 EDT 2022
+Job ID:     4973702.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Thu Sep 29 19:17:17 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+/var/spool/torque/mom_priv/jobs/4973702.sched-torque.pace.gatech.edu.SC: line 20:  2738 Killed                  julia --threads=24 --project=. ./src/vary_rho_fd_poisson.jl --n $N --d $D --boundary $BOUNDARY --coefficients $COEFFICIENTS --potential $POTENTIAL
+---------------------------------------
+Begin PBS Epilogue Sat Oct  1 12:44:32 EDT 2022
+Job ID:     4973702.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=16gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=97:15:30,vmem=518674492kb,walltime=41:27:15,mem=402652060kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-020-35-l.pace.gatech.edu
+End PBS Epilogue Sat Oct  1 12:44:32 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  2 16:50:51 EDT 2022
+Job ID:     4984555.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  2 16:50:51 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+n = 23
+d = 2
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+  4.239840 seconds (9.51 M allocations: 511.922 MiB, 5.68% gc time, 99.86% compilation time)
+Computing basis functions.
+  1.770439 seconds (3.55 M allocations: 205.256 MiB, 4.68% gc time, 98.34% compilation time)
+Computing multicolor ordering.
+  0.343380 seconds (1.11 M allocations: 50.150 MiB, 5.67% gc time, 86.78% compilation time)
+Measurements
+Number of measurements used is 212
+Reconstruction.
+  1.080456 seconds (2.56 M allocations: 157.331 MiB, 5.75% gc time, 95.48% compilation time)
+  3.795402 seconds (473.02 k allocations: 30.517 MiB, 0.54% gc time, 8.72% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307185
+ρ = 4.0
+Computing domain hierarchy.
+  0.003068 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004351 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.042681 seconds (443.92 k allocations: 15.734 MiB)
+Measurements
+Number of measurements used is 212
+Reconstruction.
+  0.028219 seconds (230.25 k allocations: 21.236 MiB)
+  1.132885 seconds (9.59 k allocations: 6.906 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307186
+ρ = 5.0
+Computing domain hierarchy.
+  0.002750 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004446 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.057095 seconds (655.37 k allocations: 24.969 MiB)
+Measurements
+Number of measurements used is 236
+Reconstruction.
+  0.037744 seconds (256.32 k allocations: 23.222 MiB, 22.33% gc time)
+  1.223239 seconds (9.83 k allocations: 7.280 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307185
+ρ = 6.0
+Computing domain hierarchy.
+  0.002539 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004357 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.071178 seconds (897.42 k allocations: 33.037 MiB)
+Measurements
+Number of measurements used is 339
+Reconstruction.
+  0.038511 seconds (368.18 k allocations: 34.004 MiB)
+  1.931105 seconds (10.87 k allocations: 11.144 MiB, 0.28% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307186
+ρ = 7.0
+Computing domain hierarchy.
+  0.002651 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004470 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.077231 seconds (1.02 M allocations: 37.005 MiB)
+Measurements
+Number of measurements used is 342
+Reconstruction.
+  0.038055 seconds (371.44 k allocations: 34.252 MiB)
+  1.952681 seconds (10.89 k allocations: 11.189 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307186
+ρ = 8.0
+Computing domain hierarchy.
+  0.002661 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004504 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.077393 seconds (1.06 M allocations: 38.468 MiB)
+Measurements
+Number of measurements used is 528
+Reconstruction.
+  0.058564 seconds (573.43 k allocations: 49.637 MiB, 10.82% gc time)
+  4.353988 seconds (12.76 k allocations: 14.037 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307186
+ρ = 9.0
+Computing domain hierarchy.
+  0.002483 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004329 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.075478 seconds (1.06 M allocations: 38.470 MiB)
+Measurements
+Number of measurements used is 529
+Reconstruction.
+  0.057042 seconds (574.52 k allocations: 49.720 MiB, 9.33% gc time)
+  3.864376 seconds (12.77 k allocations: 14.052 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307185
+ρ = 10.0
+Computing domain hierarchy.
+  0.002481 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004290 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.074741 seconds (1.06 M allocations: 38.470 MiB)
+Measurements
+Number of measurements used is 529
+Reconstruction.
+  0.056744 seconds (574.52 k allocations: 49.720 MiB, 9.39% gc time)
+  4.216113 seconds (12.77 k allocations: 14.052 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571690451307186
+---------------------------------------
+Begin PBS Epilogue Sun Oct  2 16:52:12 EDT 2022
+Job ID:     4984555.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=16gb,walltime=00:05:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:08:19,vmem=8710504kb,walltime=00:01:21,mem=418600kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-10-l.pace.gatech.edu
+End PBS Epilogue Sun Oct  2 16:52:12 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  2 16:57:37 EDT 2022
+Job ID:     4984561.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  2 16:57:37 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+n = 23
+d = 2
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+  4.230763 seconds (9.51 M allocations: 511.922 MiB, 5.60% gc time, 99.86% compilation time)
+Computing basis functions.
+  1.764736 seconds (3.55 M allocations: 205.256 MiB, 4.66% gc time, 98.41% compilation time)
+Computing multicolor ordering.
+  0.342318 seconds (1.11 M allocations: 50.150 MiB, 5.64% gc time, 86.71% compilation time)
+Measurements
+Number of measurements used is 212
+Reconstruction.
+  1.079455 seconds (2.56 M allocations: 157.331 MiB, 5.67% gc time, 95.48% compilation time)
+  1.502232 seconds (473.02 k allocations: 30.517 MiB, 1.41% gc time, 22.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 4.0
+Computing domain hierarchy.
+  0.002887 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004214 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.042124 seconds (443.92 k allocations: 15.734 MiB)
+Measurements
+Number of measurements used is 212
+Reconstruction.
+  0.027529 seconds (230.25 k allocations: 21.236 MiB)
+  1.082385 seconds (9.59 k allocations: 6.906 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 5.0
+Computing domain hierarchy.
+  0.002726 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004460 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.057106 seconds (655.37 k allocations: 24.969 MiB)
+Measurements
+Number of measurements used is 236
+Reconstruction.
+  0.038036 seconds (256.32 k allocations: 23.222 MiB, 22.31% gc time)
+  1.128927 seconds (9.83 k allocations: 7.280 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 6.0
+Computing domain hierarchy.
+  0.002586 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004582 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.071252 seconds (897.42 k allocations: 33.037 MiB)
+Measurements
+Number of measurements used is 339
+Reconstruction.
+  0.038921 seconds (368.18 k allocations: 34.004 MiB)
+  2.145496 seconds (10.87 k allocations: 11.144 MiB, 0.32% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 7.0
+Computing domain hierarchy.
+  0.002596 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004276 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.076497 seconds (1.02 M allocations: 37.005 MiB)
+Measurements
+Number of measurements used is 342
+Reconstruction.
+  0.038829 seconds (371.44 k allocations: 34.252 MiB)
+  1.863073 seconds (10.89 k allocations: 11.189 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 8.0
+Computing domain hierarchy.
+  0.002569 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004219 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.076153 seconds (1.06 M allocations: 38.468 MiB)
+Measurements
+Number of measurements used is 528
+Reconstruction.
+  0.056483 seconds (573.43 k allocations: 49.637 MiB, 9.30% gc time)
+  4.171925 seconds (12.76 k allocations: 14.037 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 9.0
+Computing domain hierarchy.
+  0.002561 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004465 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.075579 seconds (1.06 M allocations: 38.470 MiB)
+Measurements
+Number of measurements used is 529
+Reconstruction.
+  0.058960 seconds (574.52 k allocations: 49.720 MiB, 11.33% gc time)
+  3.552655 seconds (12.77 k allocations: 14.052 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+ρ = 10.0
+Computing domain hierarchy.
+  0.002472 seconds (18.12 k allocations: 1.128 MiB)
+Computing basis functions.
+  0.004199 seconds (19.33 k allocations: 2.600 MiB)
+Computing multicolor ordering.
+  0.074198 seconds (1.06 M allocations: 38.470 MiB)
+Measurements
+Number of measurements used is 529
+Reconstruction.
+  0.056273 seconds (574.52 k allocations: 49.720 MiB, 9.55% gc time)
+  3.096898 seconds (12.77 k allocations: 14.052 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.665192041456026
+---------------------------------------
+Begin PBS Epilogue Sun Oct  2 16:58:36 EDT 2022
+Job ID:     4984561.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=16gb,walltime=00:05:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:07:30,vmem=6852392kb,walltime=00:00:59,mem=390708kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-10-l.pace.gatech.edu
+End PBS Epilogue Sun Oct  2 16:58:36 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  2 17:10:09 EDT 2022
+Job ID:     4984570.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  2 17:10:09 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+n = 13
+d = 2
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+  4.278124 seconds (9.50 M allocations: 511.283 MiB, 6.51% gc time, 99.89% compilation time)
+Computing basis functions.
+  1.787892 seconds (3.57 M allocations: 205.113 MiB, 5.30% gc time, 99.66% compilation time)
+Computing multicolor ordering.
+  0.312160 seconds (737.51 k allocations: 37.153 MiB, 7.72% gc time, 97.74% compilation time)
+Measurements
+Number of measurements used is 134
+Reconstruction.
+  1.071401 seconds (2.38 M allocations: 140.447 MiB, 6.55% gc time, 99.37% compilation time)
+  0.409660 seconds (467.01 k allocations: 25.006 MiB, 74.64% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 4.0
+Computing domain hierarchy.
+  0.001481 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001767 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.005285 seconds (72.45 k allocations: 2.736 MiB)
+Measurements
+Number of measurements used is 134
+Reconstruction.
+  0.004768 seconds (49.06 k allocations: 4.352 MiB)
+  0.098726 seconds (3.58 k allocations: 1.396 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 5.0
+Computing domain hierarchy.
+  0.001081 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001793 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.005307 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006391 seconds (61.88 k allocations: 6.268 MiB)
+  0.095979 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 6.0
+Computing domain hierarchy.
+  0.001034 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001735 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.005101 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006115 seconds (61.88 k allocations: 6.268 MiB)
+  0.098487 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 7.0
+Computing domain hierarchy.
+  0.001016 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001697 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.004962 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006134 seconds (61.88 k allocations: 6.268 MiB)
+  0.173820 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 8.0
+Computing domain hierarchy.
+  0.001012 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001698 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.004946 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006045 seconds (61.88 k allocations: 6.268 MiB)
+  0.171152 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 9.0
+Computing domain hierarchy.
+  0.000990 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001722 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.004912 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006120 seconds (61.88 k allocations: 6.268 MiB)
+  0.152416 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+ρ = 10.0
+Computing domain hierarchy.
+  0.001019 seconds (8.37 k allocations: 500.172 KiB)
+Computing basis functions.
+  0.001739 seconds (6.67 k allocations: 789.859 KiB)
+Computing multicolor ordering.
+  0.004922 seconds (74.24 k allocations: 2.803 MiB)
+Measurements
+Number of measurements used is 169
+Reconstruction.
+  0.006127 seconds (61.88 k allocations: 6.268 MiB)
+  0.095130 seconds (3.89 k allocations: 2.537 MiB)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6571840529463986
+---------------------------------------
+Begin PBS Epilogue Sun Oct  2 17:10:50 EDT 2022
+Job ID:     4984570.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=16gb,walltime=00:05:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:01:04,vmem=0kb,walltime=00:00:41,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-10-l.pace.gatech.edu
+End PBS Epilogue Sun Oct  2 17:10:50 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  2 17:25:49 EDT 2022
+Job ID:     4984589.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  2 17:25:49 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+=>> PBS: job killed: walltime 317 exceeded limit 300
+
+signal (15): Terminated
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:77
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+task_done_hook at ./task.jl:634
+jfptr_task_done_hook_52648 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+jl_finish_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:254
+jl_threadfun at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:305
+start_thread at /lib64/libpthread.so.0 (unknown line)
+clone at /lib64/libc.so.6 (unknown line)
+unknown function (ip: (nil))
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:847
+ijl_task_get_next at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/partr.c:594
+poptask at ./task.jl:921
+wait at ./task.jl:930
+wait at ./condition.jl:124
+_trywait at ./asyncevent.jl:138
+wait at ./asyncevent.jl:155 [inlined]
+profile_printing_listener at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/usr/share/julia/stdlib/v1.8/Profile/src/Profile.jl:39
+#3 at ./threadingconstructs.jl:258
+jfptr_YY.3_66441 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+start_task at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/task.c:931
+unknown function (ip: (nil))
+ijl_new_bits at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/datatype.c:818
+ijl_get_nth_field at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/datatype.c:1440
+ijl_get_nth_field_checked at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/datatype.c:1456
+jl_f_getfield at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/builtins.c:936
+getproperty at ./Base.jl:38 [inlined]
+iterate at ./iterators.jl:365 [inlined]
+construct_multicolor_ordering at /storage/home/hcoda1/0/fschaefer7/.julia/packages/CompressingSolvers/F8aZj/src/multicolor_ordering.jl:42
+unknown function (ip: 0x2aab3a9a8019)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+construct_multicolor_ordering at /storage/home/hcoda1/0/fschaefer7/.julia/packages/CompressingSolvers/F8aZj/src/multicolor_ordering.jl:58
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+macro expansion at ./timing.jl:263 [inlined]
+macro expansion at /storage/home/hcoda1/0/fschaefer7/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:42 [inlined]
+macro expansion at ./timing.jl:383 [inlined]
+reconstruct at /storage/home/hcoda1/0/fschaefer7/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+reconstruct at /storage/home/hcoda1/0/fschaefer7/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+unknown function (ip: 0x2aab3a97c9f5)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+top-level scope at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:78
+jl_toplevel_eval_flex at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/toplevel.c:897
+jl_toplevel_eval_flex at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/toplevel.c:850
+ijl_toplevel_eval_in at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/toplevel.c:965
+eval at ./boot.jl:368 [inlined]
+include_string at ./loading.jl:1428
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+_include at ./loading.jl:1488
+include at ./Base.jl:419
+jfptr_include_41677 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+exec_options at ./client.jl:303
+_start at ./client.jl:522
+jfptr__start_52598 at /storage/pace-apps/manual/packages/julia/1.8.0/gcc-8.3.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2367 [inlined]
+ijl_apply_generic at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/gf.c:2549
+jl_apply at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/julia.h:1838 [inlined]
+true_main at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/jlapi.c:575
+jl_repl_entrypoint at /storage/coda1/pace-admins/manual/src/julia/julia-1.8.0/src/jlapi.c:719
+main at julia (unknown line)
+__libc_start_main at /lib64/libc.so.6 (unknown line)
+unknown function (ip: 0x400888)
+unknown function (ip: (nil))
+Allocations: 566604516 (Pool: 565864269; Big: 740247); GC: 43
+n = 1024
+d = 2
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 23.490668 seconds (70.22 M allocations: 3.529 GiB, 5.50% gc time, 17.30% compilation time)
+Computing basis functions.
+ 21.436812 seconds (48.99 M allocations: 8.754 GiB, 8.94% gc time, 8.02% compilation time)
+Computing multicolor ordering.
+---------------------------------------
+Begin PBS Epilogue Sun Oct  2 17:31:16 EDT 2022
+Job ID:     4984589.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=00:05:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:08:07,vmem=10988748kb,walltime=00:05:27,mem=4178824kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-10-l.pace.gatech.edu
+End PBS Epilogue Sun Oct  2 17:31:16 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  2 17:53:57 EDT 2022
+Job ID:     4984616.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  2 17:53:57 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+n = 1024
+d = 2
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 23.684206 seconds (70.22 M allocations: 3.529 GiB, 5.26% gc time, 17.93% compilation time)
+Computing basis functions.
+ 20.925830 seconds (48.99 M allocations: 8.754 GiB, 8.64% gc time, 8.48% compilation time)
+Computing multicolor ordering.
+541.799831 seconds (1.51 G allocations: 49.051 GiB, 1.86% gc time, 0.06% compilation time)
+Measurements
+Number of measurements used is 970
+Reconstruction.
+3768.048132 seconds (2.04 G allocations: 152.737 GiB, 7.64% gc time, 0.03% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 4.0
+Computing domain hierarchy.
+ 18.187890 seconds (60.73 M allocations: 3.030 GiB)
+Computing basis functions.
+ 20.625701 seconds (45.40 M allocations: 8.561 GiB, 12.22% gc time)
+Computing multicolor ordering.
+541.319987 seconds (1.51 G allocations: 49.018 GiB, 1.85% gc time)
+Measurements
+Number of measurements used is 970
+Reconstruction.
+3777.040424 seconds (2.03 G allocations: 158.427 GiB, 7.79% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 5.0
+Computing domain hierarchy.
+ 18.146339 seconds (60.73 M allocations: 3.030 GiB)
+Computing basis functions.
+ 20.019321 seconds (45.40 M allocations: 8.566 GiB, 5.02% gc time)
+Computing multicolor ordering.
+758.787169 seconds (2.36 G allocations: 73.780 GiB, 1.78% gc time)
+Measurements
+Number of measurements used is 1473
+Reconstruction.
+6085.778179 seconds (3.09 G allocations: 246.010 GiB, 27.94% gc time)
+2690.488463 seconds (16.89 M allocations: 36.765 GiB, 0.84% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 6.0
+Computing domain hierarchy.
+ 23.514517 seconds (60.73 M allocations: 3.027 GiB, 24.11% gc time)
+Computing basis functions.
+ 42.234019 seconds (45.40 M allocations: 8.453 GiB, 57.14% gc time)
+Computing multicolor ordering.
+994.176067 seconds (3.38 G allocations: 106.740 GiB, 3.93% gc time)
+Measurements
+Number of measurements used is 1902
+Reconstruction.
+7129.053227 seconds (3.99 G allocations: 306.453 GiB, 26.14% gc time)
+4327.456883 seconds (16.90 M allocations: 47.342 GiB, 0.40% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 7.0
+Computing domain hierarchy.
+ 23.393921 seconds (60.73 M allocations: 3.027 GiB, 24.12% gc time)
+Computing basis functions.
+ 40.382636 seconds (45.40 M allocations: 8.453 GiB, 56.01% gc time)
+Computing multicolor ordering.
+1280.104617 seconds (4.60 G allocations: 149.048 GiB, 4.25% gc time)
+Measurements
+Number of measurements used is 2577
+Reconstruction.
+9170.409312 seconds (5.40 G allocations: 411.923 GiB, 33.10% gc time)
+7772.019422 seconds (16.91 M allocations: 63.805 GiB, 0.28% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 8.0
+Computing domain hierarchy.
+ 23.481680 seconds (60.73 M allocations: 3.027 GiB, 24.20% gc time)
+Computing basis functions.
+ 38.343642 seconds (45.40 M allocations: 8.453 GiB, 54.34% gc time)
+Computing multicolor ordering.
+1573.144961 seconds (6.00 G allocations: 190.149 GiB, 4.21% gc time)
+Measurements
+Number of measurements used is 3101
+Reconstruction.
+9967.296493 seconds (6.50 G allocations: 493.799 GiB, 29.58% gc time)
+11012.230881 seconds (16.93 M allocations: 76.760 GiB, 0.20% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 9.0
+Computing domain hierarchy.
+ 24.666886 seconds (60.73 M allocations: 3.027 GiB, 27.55% gc time)
+Computing basis functions.
+ 42.860488 seconds (45.40 M allocations: 8.453 GiB, 57.76% gc time)
+Computing multicolor ordering.
+1919.716725 seconds (7.59 G allocations: 236.429 GiB, 4.42% gc time)
+Measurements
+Number of measurements used is 3768
+Reconstruction.
+11846.198057 seconds (7.90 G allocations: 598.019 GiB, 33.31% gc time)
+15772.841081 seconds (16.97 M allocations: 93.177 GiB, 0.15% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+ρ = 10.0
+Computing domain hierarchy.
+ 23.131751 seconds (60.73 M allocations: 3.027 GiB, 23.74% gc time)
+Computing basis functions.
+ 41.917776 seconds (45.40 M allocations: 8.453 GiB, 57.34% gc time)
+Computing multicolor ordering.
+2260.183032 seconds (9.37 G allocations: 297.833 GiB, 4.41% gc time)
+Measurements
+Number of measurements used is 4775
+Reconstruction.
+13679.320314 seconds (10.01 G allocations: 755.364 GiB, 34.49% gc time)
+25279.952690 seconds (17.14 M allocations: 117.591 GiB, 0.11% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666432258930591
+---------------------------------------
+Begin PBS Epilogue Tue Oct  4 14:35:36 EDT 2022
+Job ID:     4984616.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=97:31:22,vmem=517861716kb,walltime=44:41:39,mem=416616488kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-29-l.pace.gatech.edu
+End PBS Epilogue Tue Oct  4 14:35:36 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Wed Oct  5 16:10:59 EDT 2022
+Job ID:     4999360.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   1
+Queue:      inferno
+End PBS Prologue Wed Oct  5 16:10:59 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+
+signal (15): Terminated
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+pthread_cond_wait at /lib64/libpthread.so.0 (unknown line)
+---------------------------------------
+Begin PBS Epilogue Wed Oct  5 16:21:55 EDT 2022
+Job ID:     4999360.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   1
+Resources:  pmem=31gb,walltime=72:00:00
+Rsrc Used:  cput=00:09:53,vmem=9217976kb,walltime=00:10:56,mem=2358320kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-6-r.pace.gatech.edu
+End PBS Epilogue Wed Oct  5 16:21:55 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Thu Oct  6 07:48:27 EDT 2022
+Job ID:     4999350.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Thu Oct  6 07:48:27 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+---------------------------------------
+Begin PBS Prologue Thu Oct  6 10:23:09 EDT 2022
+Job ID:     4999351.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Thu Oct  6 10:23:09 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+---------------------------------------
+Begin PBS Prologue Thu Oct  6 11:20:20 EDT 2022
+Job ID:     4999353.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Thu Oct  6 11:20:20 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        n = 1024
+d = 2
+boundary = "dirichlet"
+coefficients = "random_mild"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.368127 seconds (69.23 M allocations: 3.471 GiB, 7.83% gc time, 28.90% compilation time)
+Computing basis functions.
+ 21.056562 seconds (48.43 M allocations: 8.663 GiB, 10.71% gc time, 7.97% compilation time)
+Computing multicolor ordering.
+133.215520 seconds (1.61 G allocations: 51.878 GiB, 6.96% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+295.012169 seconds (1.94 G allocations: 145.895 GiB, 11.96% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 4.0
+Computing domain hierarchy.
+  8.139378 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 20.569253 seconds (44.84 M allocations: 8.471 GiB, 14.57% gc time)
+Computing multicolor ordering.
+136.825484 seconds (1.61 G allocations: 51.848 GiB, 7.65% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+487.665268 seconds (1.94 G allocations: 145.883 GiB, 48.21% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 5.0
+Computing domain hierarchy.
+  8.132063 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 19.128896 seconds (44.84 M allocations: 8.475 GiB, 5.69% gc time)
+Computing multicolor ordering.
+206.924999 seconds (2.50 G allocations: 77.786 GiB, 6.37% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2068.056019 seconds (2.80 G allocations: 222.565 GiB, 83.52% gc time)
+2172.400251 seconds (16.89 M allocations: 33.544 GiB, 1.09% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 6.0
+Computing domain hierarchy.
+ 15.420001 seconds (60.60 M allocations: 3.015 GiB, 48.76% gc time)
+Computing basis functions.
+ 40.687567 seconds (44.84 M allocations: 8.380 GiB, 56.38% gc time)
+Computing multicolor ordering.
+300.336049 seconds (3.57 G allocations: 117.551 GiB, 15.25% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2540.600417 seconds (3.83 G allocations: 300.853 GiB, 82.62% gc time)
+3884.188899 seconds (16.90 M allocations: 45.620 GiB, 0.48% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 7.0
+Computing domain hierarchy.
+ 15.275264 seconds (60.60 M allocations: 3.015 GiB, 48.92% gc time)
+Computing basis functions.
+ 42.522478 seconds (44.84 M allocations: 8.380 GiB, 57.92% gc time)
+Computing multicolor ordering.
+401.946564 seconds (4.83 G allocations: 155.549 GiB, 14.84% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3171.191076 seconds (4.95 G allocations: 384.292 GiB, 81.98% gc time)
+6424.535042 seconds (16.91 M allocations: 58.747 GiB, 0.32% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 8.0
+Computing domain hierarchy.
+ 14.701773 seconds (60.60 M allocations: 3.015 GiB, 47.86% gc time)
+Computing basis functions.
+ 41.453017 seconds (44.84 M allocations: 8.380 GiB, 56.72% gc time)
+Computing multicolor ordering.
+511.188870 seconds (6.30 G allocations: 198.484 GiB, 14.45% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+3823.802987 seconds (6.19 G allocations: 477.261 GiB, 81.30% gc time)
+9899.706194 seconds (16.94 M allocations: 73.409 GiB, 0.22% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 9.0
+Computing domain hierarchy.
+ 13.379247 seconds (60.60 M allocations: 3.015 GiB, 43.27% gc time)
+Computing basis functions.
+ 39.492358 seconds (44.84 M allocations: 8.380 GiB, 55.73% gc time)
+Computing multicolor ordering.
+635.091262 seconds (7.93 G allocations: 246.271 GiB, 13.07% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+4266.650553 seconds (7.50 G allocations: 574.763 GiB, 80.11% gc time)
+14199.101787 seconds (17.04 M allocations: 88.777 GiB, 0.17% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+ρ = 10.0
+Computing domain hierarchy.
+ 14.762183 seconds (60.60 M allocations: 3.015 GiB, 47.87% gc time)
+Computing basis functions.
+ 41.605229 seconds (44.84 M allocations: 8.380 GiB, 57.17% gc time)
+Computing multicolor ordering.
+796.869133 seconds (9.76 G allocations: 311.570 GiB, 14.35% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+5477.006260 seconds (9.00 G allocations: 679.894 GiB, 81.25% gc time)
+19945.986598 seconds (17.25 M allocations: 106.519 GiB, 0.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03273944082595891
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 14:49:11 EDT 2022
+Job ID:     4999353.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=76:22:02,vmem=484640900kb,walltime=27:28:51,mem=418781292kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-3-l.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 14:49:11 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "dirichlet"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.819494 seconds (69.23 M allocations: 3.471 GiB, 8.77% gc time, 28.14% compilation time)
+Computing basis functions.
+ 21.942292 seconds (48.43 M allocations: 8.663 GiB, 11.95% gc time, 7.74% compilation time)
+Computing multicolor ordering.
+141.766611 seconds (1.61 G allocations: 51.878 GiB, 7.56% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+300.332142 seconds (1.94 G allocations: 145.895 GiB, 13.03% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704635
+ρ = 4.0
+Computing domain hierarchy.
+  8.504109 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 22.405244 seconds (44.84 M allocations: 8.471 GiB, 17.36% gc time)
+Computing multicolor ordering.
+146.904694 seconds (1.61 G allocations: 51.848 GiB, 8.15% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+566.865959 seconds (1.94 G allocations: 145.883 GiB, 54.72% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+ρ = 5.0
+Computing domain hierarchy.
+  8.588696 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 19.982452 seconds (44.84 M allocations: 8.475 GiB, 6.23% gc time)
+Computing multicolor ordering.
+219.724763 seconds (2.50 G allocations: 77.786 GiB, 6.58% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2042.865218 seconds (2.80 G allocations: 222.565 GiB, 83.29% gc time)
+2549.767410 seconds (16.89 M allocations: 33.544 GiB, 0.99% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+ρ = 6.0
+Computing domain hierarchy.
+ 14.512988 seconds (60.60 M allocations: 3.015 GiB, 46.02% gc time)
+Computing basis functions.
+ 46.851897 seconds (44.84 M allocations: 8.380 GiB, 61.02% gc time)
+Computing multicolor ordering.
+315.752544 seconds (3.57 G allocations: 117.551 GiB, 15.73% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2787.214193 seconds (3.83 G allocations: 300.853 GiB, 83.63% gc time)
+4596.609611 seconds (16.90 M allocations: 45.620 GiB, 0.44% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+ρ = 7.0
+Computing domain hierarchy.
+ 16.533897 seconds (60.60 M allocations: 3.015 GiB, 50.41% gc time)
+Computing basis functions.
+ 46.363631 seconds (44.84 M allocations: 8.380 GiB, 60.44% gc time)
+Computing multicolor ordering.
+414.496174 seconds (4.83 G allocations: 155.549 GiB, 15.41% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3481.460455 seconds (4.95 G allocations: 384.292 GiB, 83.20% gc time)
+7579.699201 seconds (16.91 M allocations: 58.747 GiB, 0.30% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+ρ = 8.0
+Computing domain hierarchy.
+ 14.554128 seconds (60.60 M allocations: 3.015 GiB, 46.24% gc time)
+Computing basis functions.
+ 42.872509 seconds (44.84 M allocations: 8.380 GiB, 58.12% gc time)
+Computing multicolor ordering.
+521.728834 seconds (6.30 G allocations: 198.484 GiB, 14.09% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+4638.074356 seconds (6.19 G allocations: 477.261 GiB, 84.06% gc time)
+11663.357781 seconds (16.94 M allocations: 73.409 GiB, 0.22% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704635
+ρ = 9.0
+Computing domain hierarchy.
+ 16.574667 seconds (60.60 M allocations: 3.015 GiB, 50.78% gc time)
+Computing basis functions.
+ 45.816150 seconds (44.84 M allocations: 8.380 GiB, 60.26% gc time)
+Computing multicolor ordering.
+679.066963 seconds (7.93 G allocations: 246.271 GiB, 14.88% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+5348.630904 seconds (7.50 G allocations: 574.763 GiB, 83.59% gc time)
+16507.695076 seconds (17.04 M allocations: 88.777 GiB, 0.17% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+ρ = 10.0
+Computing domain hierarchy.
+ 16.043658 seconds (60.60 M allocations: 3.015 GiB, 49.81% gc time)
+Computing basis functions.
+ 45.431939 seconds (44.84 M allocations: 8.380 GiB, 59.60% gc time)
+Computing multicolor ordering.
+826.495038 seconds (9.76 G allocations: 311.570 GiB, 14.61% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+6199.809561 seconds (9.00 G allocations: 679.894 GiB, 83.03% gc time)
+23490.458406 seconds (17.25 M allocations: 106.519 GiB, 0.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.10701755383704636
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 15:53:00 EDT 2022
+Job ID:     4999350.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=93:57:04,vmem=485091700kb,walltime=32:04:33,mem=407850580kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-9-r.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 15:53:00 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "neumann"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.753371 seconds (69.23 M allocations: 3.471 GiB, 9.03% gc time, 28.54% compilation time)
+Computing basis functions.
+ 22.220059 seconds (48.43 M allocations: 8.663 GiB, 12.00% gc time, 7.68% compilation time)
+Computing multicolor ordering.
+135.997632 seconds (1.61 G allocations: 51.878 GiB, 7.50% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+297.838579 seconds (1.94 G allocations: 145.895 GiB, 11.72% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666626215797316
+ρ = 4.0
+Computing domain hierarchy.
+  8.250424 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 21.961463 seconds (44.84 M allocations: 8.466 GiB, 17.15% gc time)
+Computing multicolor ordering.
+141.276901 seconds (1.61 G allocations: 51.848 GiB, 8.35% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+553.505630 seconds (1.94 G allocations: 145.883 GiB, 53.62% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666626215797316
+ρ = 5.0
+Computing domain hierarchy.
+  8.246706 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 21.613784 seconds (44.84 M allocations: 8.475 GiB, 10.13% gc time)
+Computing multicolor ordering.
+218.652979 seconds (2.50 G allocations: 77.786 GiB, 6.72% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2321.465473 seconds (2.80 G allocations: 222.565 GiB, 84.71% gc time)
+2540.244220 seconds (16.89 M allocations: 33.544 GiB, 1.09% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666262157973158
+ρ = 6.0
+Computing domain hierarchy.
+ 14.867918 seconds (60.60 M allocations: 3.015 GiB, 47.12% gc time)
+Computing basis functions.
+ 42.541344 seconds (44.84 M allocations: 8.380 GiB, 56.56% gc time)
+Computing multicolor ordering.
+313.034327 seconds (3.57 G allocations: 117.551 GiB, 16.14% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2834.745032 seconds (3.83 G allocations: 300.853 GiB, 83.81% gc time)
+4523.453131 seconds (16.90 M allocations: 45.620 GiB, 0.45% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666262157973158
+ρ = 7.0
+Computing domain hierarchy.
+ 16.113923 seconds (60.60 M allocations: 3.015 GiB, 49.97% gc time)
+Computing basis functions.
+ 45.780894 seconds (44.84 M allocations: 8.380 GiB, 59.52% gc time)
+Computing multicolor ordering.
+417.173386 seconds (4.83 G allocations: 155.549 GiB, 15.59% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3482.346276 seconds (4.95 G allocations: 384.292 GiB, 83.00% gc time)
+7489.439895 seconds (16.91 M allocations: 58.747 GiB, 0.29% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666262157973158
+ρ = 8.0
+Computing domain hierarchy.
+ 15.894902 seconds (60.60 M allocations: 3.015 GiB, 49.81% gc time)
+Computing basis functions.
+ 44.677455 seconds (44.84 M allocations: 8.380 GiB, 59.08% gc time)
+Computing multicolor ordering.
+519.518984 seconds (6.30 G allocations: 198.484 GiB, 13.97% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+4286.622684 seconds (6.19 G allocations: 477.261 GiB, 82.63% gc time)
+11588.698845 seconds (16.94 M allocations: 73.409 GiB, 0.21% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666262157973158
+ρ = 9.0
+Computing domain hierarchy.
+ 15.690014 seconds (60.60 M allocations: 3.015 GiB, 48.82% gc time)
+Computing basis functions.
+ 44.819185 seconds (44.84 M allocations: 8.380 GiB, 58.88% gc time)
+Computing multicolor ordering.
+657.629777 seconds (7.93 G allocations: 246.271 GiB, 14.41% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+5183.040206 seconds (7.50 G allocations: 574.763 GiB, 82.96% gc time)
+16591.706167 seconds (17.04 M allocations: 88.777 GiB, 0.16% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666626215797316
+ρ = 10.0
+Computing domain hierarchy.
+ 15.475920 seconds (60.60 M allocations: 3.015 GiB, 48.64% gc time)
+Computing basis functions.
+ 45.016180 seconds (44.84 M allocations: 8.380 GiB, 58.62% gc time)
+Computing multicolor ordering.
+820.342499 seconds (9.76 G allocations: 311.570 GiB, 15.33% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+6056.377078 seconds (9.00 G allocations: 679.894 GiB, 82.44% gc time)
+23602.924150 seconds (17.25 M allocations: 106.519 GiB, 0.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666626215797316
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 18:15:02 EDT 2022
+Job ID:     4999351.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=94:32:47,vmem=484154448kb,walltime=31:51:53,mem=415041164kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-11-l.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 18:15:02 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "neumann"
+coefficients = "random_mild"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.668013 seconds (69.23 M allocations: 3.471 GiB, 8.66% gc time, 28.54% compilation time)
+Computing basis functions.
+ 22.530388 seconds (48.43 M allocations: 8.663 GiB, 12.24% gc time, 7.55% compilation time)
+Computing multicolor ordering.
+134.388657 seconds (1.61 G allocations: 51.878 GiB, 6.90% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+300.395731 seconds (1.94 G allocations: 145.895 GiB, 12.19% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 4.0
+Computing domain hierarchy.
+  8.337790 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 22.750676 seconds (44.84 M allocations: 8.466 GiB, 17.16% gc time)
+Computing multicolor ordering.
+141.361498 seconds (1.61 G allocations: 51.848 GiB, 7.98% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+570.543748 seconds (1.94 G allocations: 145.883 GiB, 54.88% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 5.0
+Computing domain hierarchy.
+  8.329533 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 19.935913 seconds (44.84 M allocations: 8.475 GiB, 5.05% gc time)
+Computing multicolor ordering.
+214.128018 seconds (2.50 G allocations: 77.786 GiB, 6.95% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2267.148007 seconds (2.80 G allocations: 222.565 GiB, 84.46% gc time)
+2721.702191 seconds (16.89 M allocations: 33.544 GiB, 0.99% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666139757703597
+ρ = 6.0
+Computing domain hierarchy.
+ 16.403964 seconds (60.60 M allocations: 3.015 GiB, 50.37% gc time)
+Computing basis functions.
+ 45.867462 seconds (44.84 M allocations: 8.380 GiB, 59.66% gc time)
+Computing multicolor ordering.
+309.600003 seconds (3.57 G allocations: 117.551 GiB, 16.62% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2767.295211 seconds (3.83 G allocations: 300.853 GiB, 83.43% gc time)
+4821.774478 seconds (16.90 M allocations: 45.620 GiB, 0.42% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 7.0
+Computing domain hierarchy.
+ 16.392438 seconds (60.60 M allocations: 3.015 GiB, 50.53% gc time)
+Computing basis functions.
+ 46.275580 seconds (44.84 M allocations: 8.380 GiB, 59.86% gc time)
+Computing multicolor ordering.
+410.238292 seconds (4.83 G allocations: 155.549 GiB, 15.47% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3563.834795 seconds (4.95 G allocations: 384.292 GiB, 83.35% gc time)
+7791.648184 seconds (16.91 M allocations: 58.747 GiB, 0.29% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 8.0
+Computing domain hierarchy.
+ 16.336662 seconds (60.60 M allocations: 3.015 GiB, 50.64% gc time)
+Computing basis functions.
+ 46.200820 seconds (44.84 M allocations: 8.380 GiB, 60.24% gc time)
+Computing multicolor ordering.
+526.004436 seconds (6.30 G allocations: 198.484 GiB, 15.17% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+4401.812590 seconds (6.19 G allocations: 477.261 GiB, 83.08% gc time)
+11716.193308 seconds (16.94 M allocations: 73.409 GiB, 0.21% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 9.0
+Computing domain hierarchy.
+ 14.532672 seconds (60.60 M allocations: 3.015 GiB, 46.58% gc time)
+Computing basis functions.
+ 43.974368 seconds (44.84 M allocations: 8.380 GiB, 58.36% gc time)
+Computing multicolor ordering.
+636.804294 seconds (7.93 G allocations: 246.271 GiB, 13.92% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+5278.408577 seconds (7.50 G allocations: 574.763 GiB, 83.23% gc time)
+16760.938302 seconds (17.04 M allocations: 88.777 GiB, 0.15% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+ρ = 10.0
+Computing domain hierarchy.
+ 16.360157 seconds (60.60 M allocations: 3.015 GiB, 50.55% gc time)
+Computing basis functions.
+ 46.385228 seconds (44.84 M allocations: 8.380 GiB, 60.25% gc time)
+Computing multicolor ordering.
+822.666960 seconds (9.76 G allocations: 311.570 GiB, 14.80% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+6072.831571 seconds (9.00 G allocations: 679.894 GiB, 82.33% gc time)
+23515.442834 seconds (17.25 M allocations: 106.519 GiB, 0.11% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.66661397577036
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 19:48:41 EDT 2022
+Job ID:     4999354.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=93:07:38,vmem=492973160kb,walltime=32:06:33,mem=423097356kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-12-r.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 19:48:41 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "neumann"
+coefficients = "constant"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.629300 seconds (69.23 M allocations: 3.471 GiB, 8.21% gc time, 29.00% compilation time)
+Computing basis functions.
+ 21.843567 seconds (48.43 M allocations: 8.663 GiB, 12.02% gc time, 7.85% compilation time)
+Computing multicolor ordering.
+139.406644 seconds (1.61 G allocations: 51.878 GiB, 7.00% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+285.596866 seconds (1.94 G allocations: 145.895 GiB, 11.00% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 4.0
+Computing domain hierarchy.
+  8.078208 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 21.311330 seconds (44.84 M allocations: 8.466 GiB, 15.75% gc time)
+Computing multicolor ordering.
+141.762363 seconds (1.61 G allocations: 51.848 GiB, 7.56% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+508.084169 seconds (1.94 G allocations: 145.883 GiB, 50.65% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 5.0
+Computing domain hierarchy.
+  8.105459 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 20.242333 seconds (44.84 M allocations: 8.475 GiB, 5.55% gc time)
+Computing multicolor ordering.
+212.552989 seconds (2.50 G allocations: 77.786 GiB, 6.73% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+1918.116988 seconds (2.80 G allocations: 222.565 GiB, 82.31% gc time)
+2177.357430 seconds (16.89 M allocations: 33.544 GiB, 1.01% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 6.0
+Computing domain hierarchy.
+ 14.276006 seconds (60.60 M allocations: 3.015 GiB, 44.40% gc time)
+Computing basis functions.
+ 39.576752 seconds (44.84 M allocations: 8.380 GiB, 54.96% gc time)
+Computing multicolor ordering.
+292.971805 seconds (3.57 G allocations: 117.551 GiB, 14.72% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2475.963320 seconds (3.83 G allocations: 300.853 GiB, 82.32% gc time)
+3980.239480 seconds (16.90 M allocations: 45.620 GiB, 0.46% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 7.0
+Computing domain hierarchy.
+ 14.385297 seconds (60.60 M allocations: 3.015 GiB, 45.25% gc time)
+Computing basis functions.
+ 40.985426 seconds (44.84 M allocations: 8.380 GiB, 56.87% gc time)
+Computing multicolor ordering.
+390.079848 seconds (4.83 G allocations: 155.549 GiB, 13.98% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3111.294633 seconds (4.95 G allocations: 384.292 GiB, 81.78% gc time)
+6507.427788 seconds (16.91 M allocations: 58.747 GiB, 0.30% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 8.0
+Computing domain hierarchy.
+ 14.168836 seconds (60.60 M allocations: 3.015 GiB, 46.56% gc time)
+Computing basis functions.
+ 39.451204 seconds (44.84 M allocations: 8.380 GiB, 56.10% gc time)
+Computing multicolor ordering.
+494.632284 seconds (6.30 G allocations: 198.484 GiB, 13.36% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+3657.066711 seconds (6.19 G allocations: 477.261 GiB, 80.54% gc time)
+9937.992595 seconds (16.94 M allocations: 73.409 GiB, 0.21% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 9.0
+Computing domain hierarchy.
+ 14.184291 seconds (60.60 M allocations: 3.015 GiB, 46.63% gc time)
+Computing basis functions.
+ 39.639752 seconds (44.84 M allocations: 8.380 GiB, 56.68% gc time)
+Computing multicolor ordering.
+620.226910 seconds (7.93 G allocations: 246.271 GiB, 13.58% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+4389.027434 seconds (7.50 G allocations: 574.763 GiB, 80.82% gc time)
+14216.355875 seconds (17.04 M allocations: 88.777 GiB, 0.15% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+ρ = 10.0
+Computing domain hierarchy.
+ 14.249257 seconds (60.60 M allocations: 3.015 GiB, 46.88% gc time)
+Computing basis functions.
+ 40.782282 seconds (44.84 M allocations: 8.380 GiB, 56.91% gc time)
+Computing multicolor ordering.
+769.589871 seconds (9.76 G allocations: 311.570 GiB, 13.40% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+5449.015466 seconds (9.00 G allocations: 679.894 GiB, 81.28% gc time)
+20480.710499 seconds (17.25 M allocations: 106.519 GiB, 0.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6666039348582329
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 21:02:21 EDT 2022
+Job ID:     4999356.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=74:11:47,vmem=485006136kb,walltime=27:14:02,mem=419442144kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-2-l.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 21:02:21 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "dirichlet"
+coefficients = "constant"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.407392 seconds (69.23 M allocations: 3.471 GiB, 7.93% gc time, 28.87% compilation time)
+Computing basis functions.
+ 21.893936 seconds (48.43 M allocations: 8.663 GiB, 11.84% gc time, 7.67% compilation time)
+Computing multicolor ordering.
+136.057279 seconds (1.61 G allocations: 51.878 GiB, 7.34% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+287.301081 seconds (1.94 G allocations: 145.895 GiB, 11.46% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510489
+ρ = 4.0
+Computing domain hierarchy.
+  8.192599 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 21.163271 seconds (44.84 M allocations: 8.471 GiB, 16.07% gc time)
+Computing multicolor ordering.
+138.589070 seconds (1.61 G allocations: 51.848 GiB, 8.12% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+543.390378 seconds (1.94 G allocations: 145.883 GiB, 54.01% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510489
+ρ = 5.0
+Computing domain hierarchy.
+  8.247680 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 19.376349 seconds (44.84 M allocations: 8.475 GiB, 6.90% gc time)
+Computing multicolor ordering.
+208.863754 seconds (2.50 G allocations: 77.786 GiB, 6.64% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2130.618529 seconds (2.80 G allocations: 222.565 GiB, 84.26% gc time)
+2153.829491 seconds (16.89 M allocations: 33.544 GiB, 1.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+ρ = 6.0
+Computing domain hierarchy.
+ 13.675661 seconds (60.60 M allocations: 3.015 GiB, 43.48% gc time)
+Computing basis functions.
+ 37.475436 seconds (44.84 M allocations: 8.380 GiB, 54.25% gc time)
+Computing multicolor ordering.
+294.781951 seconds (3.57 G allocations: 117.551 GiB, 14.60% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2606.611462 seconds (3.83 G allocations: 300.853 GiB, 83.29% gc time)
+3892.896551 seconds (16.90 M allocations: 45.620 GiB, 0.49% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+ρ = 7.0
+Computing domain hierarchy.
+ 15.239451 seconds (60.60 M allocations: 3.015 GiB, 48.53% gc time)
+Computing basis functions.
+ 42.339419 seconds (44.84 M allocations: 8.380 GiB, 57.74% gc time)
+Computing multicolor ordering.
+396.815421 seconds (4.83 G allocations: 155.549 GiB, 14.38% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3034.176890 seconds (4.95 G allocations: 384.292 GiB, 81.53% gc time)
+6394.817700 seconds (16.91 M allocations: 58.747 GiB, 0.30% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+ρ = 8.0
+Computing domain hierarchy.
+ 15.311916 seconds (60.60 M allocations: 3.015 GiB, 48.37% gc time)
+Computing basis functions.
+ 41.457321 seconds (44.84 M allocations: 8.380 GiB, 57.72% gc time)
+Computing multicolor ordering.
+512.142353 seconds (6.30 G allocations: 198.484 GiB, 13.71% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+3984.708648 seconds (6.19 G allocations: 477.261 GiB, 82.24% gc time)
+9810.556952 seconds (16.94 M allocations: 73.409 GiB, 0.23% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+ρ = 9.0
+Computing domain hierarchy.
+ 15.183882 seconds (60.60 M allocations: 3.015 GiB, 48.57% gc time)
+Computing basis functions.
+ 41.014254 seconds (44.84 M allocations: 8.380 GiB, 57.13% gc time)
+Computing multicolor ordering.
+638.753548 seconds (7.93 G allocations: 246.271 GiB, 13.06% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+4775.021079 seconds (7.50 G allocations: 574.763 GiB, 82.40% gc time)
+14298.326757 seconds (17.04 M allocations: 88.777 GiB, 0.16% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+ρ = 10.0
+Computing domain hierarchy.
+ 14.628187 seconds (60.60 M allocations: 3.015 GiB, 47.65% gc time)
+Computing basis functions.
+ 39.845757 seconds (44.84 M allocations: 8.380 GiB, 56.18% gc time)
+Computing multicolor ordering.
+791.839827 seconds (9.76 G allocations: 311.570 GiB, 14.12% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+5750.749124 seconds (9.00 G allocations: 679.894 GiB, 82.38% gc time)
+20178.236329 seconds (17.25 M allocations: 106.519 GiB, 0.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.04708326249510488
+---------------------------------------
+Begin PBS Epilogue Fri Oct  7 21:29:05 EDT 2022
+Job ID:     4999355.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=74:36:43,vmem=484820500kb,walltime=27:40:46,mem=411300112kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-4-l.pace.gatech.edu
+End PBS Epilogue Fri Oct  7 21:29:05 EDT 2022
+---------------------------------------
+n = 1024
+d = 2
+boundary = "neumann"
+coefficients = "random_mild"
+potential = "random_mild"
+Computing domain hierarchy.
+ 13.008135 seconds (69.23 M allocations: 3.471 GiB, 9.25% gc time, 28.02% compilation time)
+Computing basis functions.
+ 22.624400 seconds (48.43 M allocations: 8.663 GiB, 11.96% gc time, 7.57% compilation time)
+Computing multicolor ordering.
+138.832637 seconds (1.61 G allocations: 51.878 GiB, 8.19% gc time, 0.16% compilation time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+304.512877 seconds (1.94 G allocations: 145.895 GiB, 13.09% gc time, 0.08% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763483
+ρ = 4.0
+Computing domain hierarchy.
+  8.216000 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 21.693267 seconds (44.84 M allocations: 8.466 GiB, 16.19% gc time)
+Computing multicolor ordering.
+141.545192 seconds (1.61 G allocations: 51.848 GiB, 8.49% gc time)
+Measurements
+Number of measurements used is 927
+Reconstruction.
+527.229222 seconds (1.94 G allocations: 145.883 GiB, 50.78% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+ρ = 5.0
+Computing domain hierarchy.
+  8.558449 seconds (60.60 M allocations: 3.019 GiB)
+Computing basis functions.
+ 20.778419 seconds (44.84 M allocations: 8.475 GiB, 5.60% gc time)
+Computing multicolor ordering.
+220.366587 seconds (2.50 G allocations: 77.786 GiB, 7.51% gc time)
+Measurements
+Number of measurements used is 1333
+Reconstruction.
+2396.933518 seconds (2.80 G allocations: 222.565 GiB, 85.31% gc time)
+2569.624662 seconds (16.89 M allocations: 33.544 GiB, 1.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+ρ = 6.0
+Computing domain hierarchy.
+ 16.796304 seconds (60.60 M allocations: 3.015 GiB, 50.43% gc time)
+Computing basis functions.
+ 47.259540 seconds (44.84 M allocations: 8.380 GiB, 59.45% gc time)
+Computing multicolor ordering.
+309.138129 seconds (3.57 G allocations: 117.551 GiB, 16.33% gc time)
+Measurements
+Number of measurements used is 1824
+Reconstruction.
+2699.232944 seconds (3.83 G allocations: 300.853 GiB, 82.98% gc time)
+4775.683404 seconds (16.90 M allocations: 45.620 GiB, 0.42% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763483
+ρ = 7.0
+Computing domain hierarchy.
+ 16.534956 seconds (60.60 M allocations: 3.015 GiB, 50.38% gc time)
+Computing basis functions.
+ 46.518191 seconds (44.84 M allocations: 8.380 GiB, 60.39% gc time)
+Computing multicolor ordering.
+410.039515 seconds (4.83 G allocations: 155.549 GiB, 15.35% gc time)
+Measurements
+Number of measurements used is 2358
+Reconstruction.
+3513.741494 seconds (4.95 G allocations: 384.292 GiB, 83.02% gc time)
+7631.573169 seconds (16.91 M allocations: 58.747 GiB, 0.29% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+ρ = 8.0
+Computing domain hierarchy.
+ 14.641557 seconds (60.60 M allocations: 3.015 GiB, 46.47% gc time)
+Computing basis functions.
+ 44.513197 seconds (44.84 M allocations: 8.380 GiB, 58.72% gc time)
+Computing multicolor ordering.
+510.569831 seconds (6.30 G allocations: 198.484 GiB, 14.11% gc time)
+Measurements
+Number of measurements used is 2953
+Reconstruction.
+4502.052001 seconds (6.19 G allocations: 477.261 GiB, 83.40% gc time)
+11646.496805 seconds (16.94 M allocations: 73.409 GiB, 0.23% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+ρ = 9.0
+Computing domain hierarchy.
+ 16.015354 seconds (60.60 M allocations: 3.015 GiB, 49.57% gc time)
+Computing basis functions.
+ 45.926605 seconds (44.84 M allocations: 8.380 GiB, 58.89% gc time)
+Computing multicolor ordering.
+667.176166 seconds (7.93 G allocations: 246.271 GiB, 14.94% gc time)
+Measurements
+Number of measurements used is 3577
+Reconstruction.
+5286.784096 seconds (7.50 G allocations: 574.763 GiB, 83.24% gc time)
+16935.295905 seconds (17.04 M allocations: 88.777 GiB, 0.15% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+ρ = 10.0
+Computing domain hierarchy.
+ 14.443360 seconds (60.60 M allocations: 3.015 GiB, 45.93% gc time)
+Computing basis functions.
+ 41.811870 seconds (44.84 M allocations: 8.380 GiB, 57.09% gc time)
+Computing multicolor ordering.
+810.152172 seconds (9.76 G allocations: 311.570 GiB, 14.26% gc time)
+Measurements
+Number of measurements used is 4292
+Reconstruction.
+6627.732273 seconds (9.00 G allocations: 679.894 GiB, 83.91% gc time)
+23735.993040 seconds (17.25 M allocations: 106.519 GiB, 0.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667808141763484
+---------------------------------------
+Begin PBS Epilogue Sat Oct  8 08:37:49 EDT 2022
+Job ID:     4999352.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=93:19:05,vmem=484969308kb,walltime=32:14:57,mem=418451144kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-16-l.pace.gatech.edu
+End PBS Epilogue Sat Oct  8 08:37:49 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sat Oct  8 20:40:42 EDT 2022
+Job ID:     5023221.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sat Oct  8 20:40:42 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+n = 1024
+d = 2
+boundary = "periodic"
+coefficients = "constant"
+potential = "random_mild"
+Computing domain hierarchy.
+ 23.674856 seconds (70.22 M allocations: 3.529 GiB, 5.51% gc time, 17.64% compilation time)
+Computing basis functions.
+ 21.400129 seconds (48.99 M allocations: 8.754 GiB, 8.81% gc time, 8.21% compilation time)
+Computing multicolor ordering.
+528.048614 seconds (1.51 G allocations: 49.051 GiB, 2.09% gc time, 0.13% compilation time)
+Measurements
+Number of measurements used is 970
+Reconstruction.
+3810.221600 seconds (2.04 G allocations: 152.737 GiB, 8.50% gc time, 0.03% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 4.0
+Computing domain hierarchy.
+ 18.454336 seconds (60.73 M allocations: 3.030 GiB)
+Computing basis functions.
+ 21.121437 seconds (45.40 M allocations: 8.566 GiB, 13.28% gc time)
+Computing multicolor ordering.
+525.536106 seconds (1.51 G allocations: 49.018 GiB, 2.08% gc time)
+Measurements
+Number of measurements used is 970
+Reconstruction.
+3834.785593 seconds (2.03 G allocations: 158.427 GiB, 9.24% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 5.0
+Computing domain hierarchy.
+ 18.355053 seconds (60.73 M allocations: 3.030 GiB)
+Computing basis functions.
+ 20.660666 seconds (45.40 M allocations: 8.566 GiB, 6.01% gc time)
+Computing multicolor ordering.
+736.287642 seconds (2.36 G allocations: 73.780 GiB, 1.93% gc time)
+Measurements
+Number of measurements used is 1473
+Reconstruction.
+6638.060105 seconds (3.09 G allocations: 246.010 GiB, 33.86% gc time)
+3415.394413 seconds (16.89 M allocations: 36.765 GiB, 0.83% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 6.0
+Computing domain hierarchy.
+ 26.002054 seconds (60.73 M allocations: 3.027 GiB, 30.14% gc time)
+Computing basis functions.
+ 47.082984 seconds (45.40 M allocations: 8.453 GiB, 60.37% gc time)
+Computing multicolor ordering.
+963.633709 seconds (3.38 G allocations: 106.740 GiB, 4.85% gc time)
+Measurements
+Number of measurements used is 1902
+Reconstruction.
+7525.368358 seconds (3.99 G allocations: 306.453 GiB, 29.93% gc time)
+5108.476170 seconds (16.90 M allocations: 47.342 GiB, 0.39% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 7.0
+Computing domain hierarchy.
+ 26.133261 seconds (60.73 M allocations: 3.027 GiB, 30.38% gc time)
+Computing basis functions.
+ 47.146339 seconds (45.40 M allocations: 8.453 GiB, 60.56% gc time)
+Computing multicolor ordering.
+1234.671072 seconds (4.60 G allocations: 149.048 GiB, 5.19% gc time)
+Measurements
+Number of measurements used is 2577
+Reconstruction.
+9444.711620 seconds (5.40 G allocations: 411.923 GiB, 34.90% gc time)
+9273.660262 seconds (16.91 M allocations: 63.805 GiB, 0.25% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 8.0
+Computing domain hierarchy.
+ 24.417082 seconds (60.73 M allocations: 3.027 GiB, 26.70% gc time)
+Computing basis functions.
+ 42.225949 seconds (45.40 M allocations: 8.453 GiB, 58.25% gc time)
+Computing multicolor ordering.
+1503.683321 seconds (6.00 G allocations: 190.149 GiB, 4.64% gc time)
+Measurements
+Number of measurements used is 3101
+Reconstruction.
+11205.129342 seconds (6.50 G allocations: 493.799 GiB, 37.23% gc time)
+12913.113372 seconds (16.93 M allocations: 76.760 GiB, 0.21% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 9.0
+Computing domain hierarchy.
+ 25.731541 seconds (60.73 M allocations: 3.027 GiB, 29.42% gc time)
+Computing basis functions.
+ 46.133259 seconds (45.40 M allocations: 8.453 GiB, 60.32% gc time)
+Computing multicolor ordering.
+1851.473880 seconds (7.59 G allocations: 236.429 GiB, 5.33% gc time)
+Measurements
+Number of measurements used is 3768
+Reconstruction.
+12561.199399 seconds (7.90 G allocations: 598.019 GiB, 36.93% gc time)
+18406.676924 seconds (16.97 M allocations: 93.177 GiB, 0.15% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+ρ = 10.0
+Computing domain hierarchy.
+ 25.171769 seconds (60.73 M allocations: 3.027 GiB, 29.01% gc time)
+Computing basis functions.
+ 45.277627 seconds (45.40 M allocations: 8.453 GiB, 60.08% gc time)
+Computing multicolor ordering.
+2174.227025 seconds (9.37 G allocations: 297.833 GiB, 5.17% gc time)
+Measurements
+Number of measurements used is 4775
+Reconstruction.
+14649.870991 seconds (10.01 G allocations: 755.364 GiB, 38.73% gc time)
+29833.879128 seconds (17.14 M allocations: 117.591 GiB, 0.11% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6667852791550304
+---------------------------------------
+Begin PBS Epilogue Sun Oct  9 02:47:30 EDT 2022
+Job ID:     4999357.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=121:05:11,vmem=517601844kb,walltime=50:24:38,mem=416378176kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-03-004-12-l.pace.gatech.edu
+End PBS Epilogue Sun Oct  9 02:47:30 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct  9 03:10:22 EDT 2022
+Job ID:     5023222.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct  9 03:10:22 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+---------------------------------------
+Begin PBS Prologue Mon Oct 10 12:24:57 EDT 2022
+Job ID:     5023223.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 12:24:57 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+---------------------------------------
+Begin PBS Prologue Mon Oct 10 15:07:16 EDT 2022
+Job ID:     5023224.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:07:16 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+r ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:07:16 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+r ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:07:16 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+r ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:07:16 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "neumann"
+coefficients = "constant"
+potential = "random_severe"
+"
+---------------------------------------
+Begin PBS Epilogue Mon Oct 10 15:07:56 EDT 2022
+Job ID:     5023224.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=6385888kb,walltime=00:00:40,mem=289720kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-1-l.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:07:56 EDT 2022
+---------------------------------------
+2
+Job ID:     5023225.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=6385888kb,walltime=00:00:40,mem=291052kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-29-l.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:07:56 EDT 2022
+---------------------------------------
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "periodic"
+coefficients = "constant"
+potential = "random_severe"
+---------------------------------------
+Begin PBS Epilogue Mon Oct 10 15:07:56 EDT 2022
+Job ID:     5023226.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=6394456kb,walltime=00:00:40,mem=628620kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-r.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:07:56 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Mon Oct 10 15:08:22 EDT 2022
+Job ID:     5023228.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:08:22 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+r ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:08:22 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+r ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:08:22 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "neumann"
+coefficients = "random_severe"
+potential = "random_severe"
+---------------------------------------
+Begin PBS Epilogue Mon Oct 10 15:08:40 EDT 2022
+Job ID:     5023230.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=0kb,walltime=00:00:18,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-r.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:08:40 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Mon Oct 10 15:09:32 EDT 2022
+Job ID:     5023231.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:09:32 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "dirichlet"
+coefficients = "random_severe"
+potential = "random_severe"
+---------------------------------------
+Begin PBS Epilogue Mon Oct 10 15:09:50 EDT 2022
+Job ID:     5023231.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=6846228kb,walltime=00:00:18,mem=295344kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-r.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:09:50 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Mon Oct 10 15:10:59 EDT 2022
+Job ID:     5023232.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Mon Oct 10 15:10:59 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_severe"
+---------------------------------------
+Begin PBS Epilogue Mon Oct 10 15:11:17 EDT 2022
+Job ID:     5023232.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=0kb,walltime=00:00:18,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-r.pace.gatech.edu
+End PBS Epilogue Mon Oct 10 15:11:17 EDT 2022
+---------------------------------------
+/var/spool/torque/mom_priv/jobs/5023221.sched-torque.pace.gatech.edu.SC: line 20: 72057 Killed                  julia --threads=24 --project=. ./src/vary_rho_fd_poisson.jl --n $N --d $D --boundary $BOUNDARY --coefficients $COEFFICIENTS --potential $POTENTIAL
+---------------------------------------
+Begin PBS Epilogue Tue Oct 11 02:31:59 EDT 2022
+Job ID:     5023221.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=112:19:41,vmem=924399796kb,walltime=53:51:17,mem=777255968kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-4-l.pace.gatech.edu
+End PBS Epilogue Tue Oct 11 02:31:59 EDT 2022
+---------------------------------------
+ERROR: LoadError: OutOfMemoryError()
+Stacktrace:
+  [1] _growend!
+    @ ./array.jl:1011 [inlined]
+  [2] push!
+    @ ./array.jl:1058 [inlined]
+  [3] sparsity_set(colors::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, tree_function::CompressingSolvers.var"#tree_function#66"{CompressingSolvers.ReconstructionProblem, UnionAll})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:82
+  [4] macro expansion
+    @ ./timing.jl:263 [inlined]
+  [5] reconstruct(ordering::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, measurement_matrix::Matrix{Float64}, measurement_results::Matrix{Float64}, tree_function::Function, low_rank_accuracy::Int64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:124
+  [6] macro expansion
+    @ ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:56 [inlined]
+  [7] macro expansion
+    @ ./timing.jl:383 [inlined]
+  [8] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64, low_rank_accuracy::Int64, h::Float64, TreeType::Type{NearestNeighbors.KDTree})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:55
+  [9] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+ [10] top-level scope
+    @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:97
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+n = 100
+d = 3
+boundary = "neumann"
+coefficients = "constant"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.664359 seconds (70.23 M allocations: 3.555 GiB, 28.63% compilation time)
+Computing basis functions.
+ 26.824361 seconds (51.56 M allocations: 10.897 GiB, 4.48% gc time, 6.25% compilation time)
+Computing multicolor ordering.
+812.611349 seconds (8.75 G allocations: 279.774 GiB, 5.83% gc time, 0.05% compilation time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3678.435118 seconds (4.83 G allocations: 368.326 GiB, 81.73% gc time, 0.01% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666793833292828
+ρ = 3.0
+Computing domain hierarchy.
+ 10.109227 seconds (61.53 M allocations: 3.099 GiB, 0.06% gc time)
+Computing basis functions.
+ 26.220986 seconds (47.97 M allocations: 10.695 GiB, 5.14% gc time)
+Computing multicolor ordering.
+803.143856 seconds (8.75 G allocations: 279.743 GiB, 5.61% gc time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3721.903651 seconds (4.83 G allocations: 372.968 GiB, 82.14% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666793833292828
+ρ = 4.0
+Computing domain hierarchy.
+ 17.489545 seconds (61.53 M allocations: 3.096 GiB, 44.92% gc time)
+Computing basis functions.
+ 59.684905 seconds (47.97 M allocations: 10.578 GiB, 60.37% gc time)
+Computing multicolor ordering.
+1834.624598 seconds (19.93 G allocations: 637.615 GiB, 14.27% gc time)
+Measurements
+Number of measurements used is 4939
+Reconstruction.
+7432.365525 seconds (9.88 G allocations: 748.929 GiB, 82.44% gc time)
+29972.204017 seconds (16.55 M allocations: 118.840 GiB, 0.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666793833292828
+ρ = 5.0
+Computing domain hierarchy.
+ 16.809450 seconds (61.53 M allocations: 3.096 GiB, 44.32% gc time)
+Computing basis functions.
+ 56.482154 seconds (47.97 M allocations: 10.578 GiB, 59.47% gc time)
+Computing multicolor ordering.
+3412.611758 seconds (37.34 G allocations: 1.189 TiB, 13.06% gc time)
+Measurements
+Number of measurements used is 8535
+Reconstruction.
+12709.176870 seconds (17.07 G allocations: 1.270 TiB, 82.56% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666793833292828
+ρ = 6.0
+Computing domain hierarchy.
+ 15.221327 seconds (61.53 M allocations: 3.096 GiB, 39.84% gc time)
+Computing basis functions.
+ 50.585809 seconds (47.97 M allocations: 10.578 GiB, 56.92% gc time)
+Computing multicolor ordering.
+5639.871746 seconds (61.89 G allocations: 1.923 TiB, 13.20% gc time)
+Measurements
+Number of measurements used is 13490
+Reconstruction.
+---------------------------------------
+Begin PBS Epilogue Tue Oct 11 08:37:26 EDT 2022
+Job ID:     5023222.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=171:02:05,vmem=883852040kb,walltime=53:27:04,mem=768423640kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-020-36-r.pace.gatech.edu
+End PBS Epilogue Tue Oct 11 08:37:26 EDT 2022
+---------------------------------------
+ERROR: LoadError: OutOfMemoryError()
+Stacktrace:
+  [1] _growend!
+    @ ./array.jl:1011 [inlined]
+  [2] push!
+    @ ./array.jl:1058 [inlined]
+  [3] sparsity_set(colors::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, tree_function::CompressingSolvers.var"#tree_function#66"{CompressingSolvers.ReconstructionProblem, UnionAll})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:82
+  [4] macro expansion
+    @ ./timing.jl:263 [inlined]
+  [5] reconstruct(ordering::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, measurement_matrix::Matrix{Float64}, measurement_results::Matrix{Float64}, tree_function::Function, low_rank_accuracy::Int64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:124
+  [6] macro expansion
+    @ ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:56 [inlined]
+  [7] macro expansion
+    @ ./timing.jl:383 [inlined]
+  [8] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64, low_rank_accuracy::Int64, h::Float64, TreeType::Type{NearestNeighbors.KDTree})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:55
+  [9] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+ [10] top-level scope
+    @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:97
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+n = 100
+d = 3
+boundary = "neumann"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.777063 seconds (70.23 M allocations: 3.555 GiB, 29.37% compilation time)
+Computing basis functions.
+ 26.969818 seconds (51.56 M allocations: 10.897 GiB, 4.88% gc time, 6.48% compilation time)
+Computing multicolor ordering.
+793.344675 seconds (8.75 G allocations: 279.774 GiB, 6.32% gc time, 0.05% compilation time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3594.728454 seconds (4.83 G allocations: 368.326 GiB, 81.77% gc time, 0.01% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6664877919577559
+ρ = 3.0
+Computing domain hierarchy.
+  9.904196 seconds (61.53 M allocations: 3.099 GiB, 0.04% gc time)
+Computing basis functions.
+ 25.530233 seconds (47.97 M allocations: 10.695 GiB, 4.45% gc time)
+Computing multicolor ordering.
+784.334254 seconds (8.75 G allocations: 279.743 GiB, 5.71% gc time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3552.811765 seconds (4.83 G allocations: 372.968 GiB, 81.62% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666487791957756
+ρ = 4.0
+Computing domain hierarchy.
+ 16.195738 seconds (61.53 M allocations: 3.096 GiB, 43.09% gc time)
+Computing basis functions.
+ 53.515232 seconds (47.97 M allocations: 10.578 GiB, 57.98% gc time)
+Computing multicolor ordering.
+1771.874794 seconds (19.93 G allocations: 637.615 GiB, 12.34% gc time)
+Measurements
+Number of measurements used is 4939
+Reconstruction.
+6708.985372 seconds (9.88 G allocations: 748.929 GiB, 81.31% gc time)
+25743.998793 seconds (16.55 M allocations: 118.840 GiB, 0.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.666487791957756
+ρ = 5.0
+Computing domain hierarchy.
+ 15.681767 seconds (61.53 M allocations: 3.096 GiB, 42.41% gc time)
+Computing basis functions.
+ 52.446140 seconds (47.97 M allocations: 10.578 GiB, 57.73% gc time)
+Computing multicolor ordering.
+3274.820415 seconds (37.34 G allocations: 1.189 TiB, 12.61% gc time)
+Measurements
+Number of measurements used is 8535
+Reconstruction.
+11168.368449 seconds (17.07 G allocations: 1.270 TiB, 80.53% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6664877919577559
+ρ = 6.0
+Computing domain hierarchy.
+ 15.587021 seconds (61.53 M allocations: 3.096 GiB, 40.15% gc time)
+Computing basis functions.
+ 53.227006 seconds (47.97 M allocations: 10.578 GiB, 55.82% gc time)
+Computing multicolor ordering.
+5522.339184 seconds (61.89 G allocations: 1.923 TiB, 11.86% gc time)
+Measurements
+Number of measurements used is 13490
+Reconstruction.
+---------------------------------------
+Begin PBS Epilogue Wed Oct 12 14:40:29 EDT 2022
+Job ID:     5023229.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=156:21:32,vmem=883707860kb,walltime=47:32:07,mem=750378040kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-29-l.pace.gatech.edu
+End PBS Epilogue Wed Oct 12 14:40:29 EDT 2022
+---------------------------------------
+ERROR: LoadError: OutOfMemoryError()
+Stacktrace:
+  [1] _growend!
+    @ ./array.jl:1011 [inlined]
+  [2] push!
+    @ ./array.jl:1058 [inlined]
+  [3] sparsity_set(colors::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, tree_function::CompressingSolvers.var"#tree_function#66"{CompressingSolvers.ReconstructionProblem, UnionAll})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:82
+  [4] macro expansion
+    @ ./timing.jl:263 [inlined]
+  [5] reconstruct(ordering::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, measurement_matrix::Matrix{Float64}, measurement_results::Matrix{Float64}, tree_function::Function, low_rank_accuracy::Int64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:124
+  [6] macro expansion
+    @ ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:56 [inlined]
+  [7] macro expansion
+    @ ./timing.jl:383 [inlined]
+  [8] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64, low_rank_accuracy::Int64, h::Float64, TreeType::Type{NearestNeighbors.KDTree})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:55
+  [9] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+ [10] top-level scope
+    @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:97
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+n = 100
+d = 3
+boundary = "dirichlet"
+coefficients = "constant"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.536166 seconds (70.23 M allocations: 3.555 GiB, 28.89% compilation time)
+Computing basis functions.
+ 27.758515 seconds (51.56 M allocations: 10.897 GiB, 4.96% gc time, 6.11% compilation time)
+Computing multicolor ordering.
+798.311651 seconds (8.75 G allocations: 279.774 GiB, 6.91% gc time, 0.05% compilation time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3882.559624 seconds (4.83 G allocations: 368.326 GiB, 83.03% gc time, 0.01% compilation time)
+6682.964922 seconds (16.67 M allocations: 58.131 GiB, 0.51% gc time, 0.01% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03214855465497886
+ρ = 3.0
+Computing domain hierarchy.
+  9.694776 seconds (61.53 M allocations: 3.099 GiB, 0.04% gc time)
+Computing basis functions.
+ 25.494800 seconds (47.97 M allocations: 10.695 GiB, 4.27% gc time)
+Computing multicolor ordering.
+774.905610 seconds (8.75 G allocations: 279.743 GiB, 6.21% gc time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3789.624579 seconds (4.83 G allocations: 372.968 GiB, 82.70% gc time)
+6669.785960 seconds (16.21 M allocations: 58.128 GiB, 0.50% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03214855465497886
+ρ = 4.0
+Computing domain hierarchy.
+ 16.017113 seconds (61.53 M allocations: 3.096 GiB, 41.44% gc time)
+Computing basis functions.
+ 51.490190 seconds (47.97 M allocations: 10.578 GiB, 55.61% gc time)
+Computing multicolor ordering.
+1801.090126 seconds (19.93 G allocations: 637.615 GiB, 13.20% gc time)
+Measurements
+Number of measurements used is 4939
+Reconstruction.
+6990.771527 seconds (9.88 G allocations: 748.929 GiB, 81.86% gc time)
+25708.282222 seconds (16.55 M allocations: 118.840 GiB, 0.14% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03214855465497886
+ρ = 5.0
+Computing domain hierarchy.
+ 15.902819 seconds (61.53 M allocations: 3.096 GiB, 42.42% gc time)
+Computing basis functions.
+ 50.572349 seconds (47.97 M allocations: 10.578 GiB, 54.93% gc time)
+Computing multicolor ordering.
+3328.753149 seconds (37.34 G allocations: 1.189 TiB, 12.81% gc time)
+Measurements
+Number of measurements used is 8535
+Reconstruction.
+12015.448592 seconds (17.07 G allocations: 1.270 TiB, 82.13% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.03214855465497886
+ρ = 6.0
+Computing domain hierarchy.
+ 15.664937 seconds (61.53 M allocations: 3.096 GiB, 42.57% gc time)
+Computing basis functions.
+ 52.923462 seconds (47.97 M allocations: 10.578 GiB, 57.63% gc time)
+Computing multicolor ordering.
+5396.555371 seconds (61.89 G allocations: 1.923 TiB, 11.99% gc time)
+Measurements
+Number of measurements used is 13490
+Reconstruction.
+---------------------------------------
+Begin PBS Epilogue Wed Oct 12 15:00:52 EDT 2022
+Job ID:     5023223.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=164:58:16,vmem=883987516kb,walltime=50:35:55,mem=762952232kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-18-r.pace.gatech.edu
+End PBS Epilogue Wed Oct 12 15:00:52 EDT 2022
+---------------------------------------
+ERROR: LoadError: OutOfMemoryError()
+Stacktrace:
+  [1] _growend!
+    @ ./array.jl:1011 [inlined]
+  [2] push!
+    @ ./array.jl:1058 [inlined]
+  [3] sparsity_set(colors::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, tree_function::CompressingSolvers.var"#tree_function#66"{CompressingSolvers.ReconstructionProblem, UnionAll})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:82
+  [4] macro expansion
+    @ ./timing.jl:263 [inlined]
+  [5] reconstruct(ordering::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, measurement_matrix::Matrix{Float64}, measurement_results::Matrix{Float64}, tree_function::Function, low_rank_accuracy::Int64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:124
+  [6] macro expansion
+    @ ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:56 [inlined]
+  [7] macro expansion
+    @ ./timing.jl:383 [inlined]
+  [8] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64, low_rank_accuracy::Int64, h::Float64, TreeType::Type{NearestNeighbors.KDTree})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:55
+  [9] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+ [10] top-level scope
+    @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:97
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+n = 100
+d = 3
+boundary = "dirichlet"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.562660 seconds (70.23 M allocations: 3.555 GiB, 29.71% compilation time)
+Computing basis functions.
+ 27.395109 seconds (51.56 M allocations: 10.897 GiB, 4.93% gc time, 6.33% compilation time)
+Computing multicolor ordering.
+793.808976 seconds (8.75 G allocations: 279.774 GiB, 6.24% gc time, 0.05% compilation time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3557.510195 seconds (4.83 G allocations: 368.326 GiB, 81.74% gc time, 0.01% compilation time)
+6660.292232 seconds (16.67 M allocations: 58.131 GiB, 0.49% gc time, 0.01% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.06917482520695586
+ρ = 3.0
+Computing domain hierarchy.
+  9.814915 seconds (61.53 M allocations: 3.099 GiB, 0.05% gc time)
+Computing basis functions.
+ 25.173432 seconds (47.97 M allocations: 10.695 GiB, 4.83% gc time)
+Computing multicolor ordering.
+776.943411 seconds (8.75 G allocations: 279.743 GiB, 6.02% gc time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3347.680848 seconds (4.83 G allocations: 372.968 GiB, 80.79% gc time)
+6685.807756 seconds (16.21 M allocations: 58.128 GiB, 0.49% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.06917482520695586
+ρ = 4.0
+Computing domain hierarchy.
+ 16.325061 seconds (61.53 M allocations: 3.096 GiB, 41.99% gc time)
+Computing basis functions.
+ 53.544431 seconds (47.97 M allocations: 10.578 GiB, 57.21% gc time)
+Computing multicolor ordering.
+1740.112110 seconds (19.93 G allocations: 637.615 GiB, 12.03% gc time)
+Measurements
+Number of measurements used is 4939
+Reconstruction.
+6254.241889 seconds (9.88 G allocations: 748.929 GiB, 80.19% gc time)
+25728.556572 seconds (16.55 M allocations: 118.840 GiB, 0.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.06917482520695586
+ρ = 5.0
+Computing domain hierarchy.
+ 14.537408 seconds (61.53 M allocations: 3.096 GiB, 38.41% gc time)
+Computing basis functions.
+ 53.960352 seconds (47.97 M allocations: 10.578 GiB, 58.13% gc time)
+Computing multicolor ordering.
+3211.801338 seconds (37.34 G allocations: 1.189 TiB, 11.92% gc time)
+Measurements
+Number of measurements used is 8535
+Reconstruction.
+10600.659842 seconds (17.07 G allocations: 1.270 TiB, 79.79% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.06917482520695586
+ρ = 6.0
+Computing domain hierarchy.
+ 14.895228 seconds (61.53 M allocations: 3.096 GiB, 39.41% gc time)
+Computing basis functions.
+ 50.120356 seconds (47.97 M allocations: 10.578 GiB, 55.93% gc time)
+Computing multicolor ordering.
+5377.159180 seconds (61.89 G allocations: 1.923 TiB, 11.79% gc time)
+Measurements
+Number of measurements used is 13490
+Reconstruction.
+---------------------------------------
+Begin PBS Epilogue Wed Oct 12 15:57:41 EDT 2022
+Job ID:     5023228.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=161:37:52,vmem=883810932kb,walltime=48:49:19,mem=764447048kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-004-1-l.pace.gatech.edu
+End PBS Epilogue Wed Oct 12 15:57:42 EDT 2022
+---------------------------------------
+/var/spool/torque/mom_priv/jobs/5023227.sched-torque.pace.gatech.edu.SC: line 20: 99521 Killed                  julia --threads=24 --project=. ./src/vary_rho_fd_poisson.jl --n $N --d $D --boundary $BOUNDARY --coefficients $COEFFICIENTS --potential $POTENTIAL
+---------------------------------------
+Begin PBS Epilogue Wed Oct 12 20:30:30 EDT 2022
+Job ID:     5023227.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=72:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=115:56:04,vmem=924313384kb,walltime=53:23:14,mem=774027416kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-30-l.pace.gatech.edu
+End PBS Epilogue Wed Oct 12 20:30:30 EDT 2022
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Sun Oct 16 09:48:16 EDT 2022
+Job ID:     5045853.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Sun Oct 16 09:48:16 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: Invalid name of coefficients
+Stacktrace:
+ [1] error(s::String)
+   @ Base ./error.jl:35
+ [2] select_coefficients_and_potential(d::Int64, coefficients::String, potential::String)
+   @ Main ~/Research/compressing_solvers_code/src/coefficients_and_potentials.jl:77
+ [3] top-level scope
+   @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:46
+n = 100
+d = 3
+boundary = "periodic"
+coefficients = "random_severe"
+potential = "random_severe"
+---------------------------------------
+Begin PBS Epilogue Sun Oct 16 09:48:43 EDT 2022
+Job ID:     5045853.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=96:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=00:00:17,vmem=0kb,walltime=00:00:27,mem=0kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-l.pace.gatech.edu
+End PBS Epilogue Sun Oct 16 09:48:43 EDT 2022
+---------------------------------------
+---------------------------------------
+---------------------------------------
+---------------------------------------
+Begin PBS Prologue Thu Oct 20 00:41:05 EDT 2022
+Job ID:     5069395.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Queue:      inferno
+End PBS Prologue Thu Oct 20 00:41:05 EDT 2022
+---------------------------------------
+
+Lmod is automatically replacing "intel/19.0.5" with "gcc/8.3.0".
+
+
+Lmod is automatically replacing "mvapich2/2.3.2" with "openmpi/3.1.6".
+
+ERROR: LoadError: OutOfMemoryError()
+Stacktrace:
+  [1] _growend!
+    @ ./array.jl:1011 [inlined]
+  [2] push!
+    @ ./array.jl:1058 [inlined]
+  [3] sparsity_set(colors::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, tree_function::CompressingSolvers.var"#tree_function#66"{CompressingSolvers.ReconstructionProblem, UnionAll})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:82
+  [4] macro expansion
+    @ ./timing.jl:263 [inlined]
+  [5] reconstruct(ordering::Vector{Vector{CompressingSolvers.BasisFunction{StaticArraysCore.SVector{3, Float64}, Float64}}}, row_centers::Vector{StaticArraysCore.SVector{3, Float64}}, measurement_matrix::Matrix{Float64}, measurement_results::Matrix{Float64}, tree_function::Function, low_rank_accuracy::Int64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:124
+  [6] macro expansion
+    @ ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:56 [inlined]
+  [7] macro expansion
+    @ ./timing.jl:383 [inlined]
+  [8] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64, low_rank_accuracy::Int64, h::Float64, TreeType::Type{NearestNeighbors.KDTree})
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:55
+  [9] reconstruct(pb::CompressingSolvers.ReconstructionProblem, ρ::Float64)
+    @ CompressingSolvers ~/.julia/packages/CompressingSolvers/F8aZj/src/reconstruction.jl:30
+ [10] top-level scope
+    @ ~/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:97
+in expression starting at /storage/home/hcoda1/0/fschaefer7/Research/compressing_solvers_code/src/vary_rho_fd_poisson.jl:92
+n = 100
+d = 3
+boundary = "neumann"
+coefficients = "random_severe"
+potential = "random_mild"
+Computing domain hierarchy.
+ 12.468962 seconds (70.23 M allocations: 3.555 GiB, 28.99% compilation time)
+Computing basis functions.
+ 27.648242 seconds (51.56 M allocations: 10.897 GiB, 5.10% gc time, 6.14% compilation time)
+Computing multicolor ordering.
+798.770437 seconds (8.75 G allocations: 279.774 GiB, 6.56% gc time, 0.05% compilation time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3740.714843 seconds (4.83 G allocations: 368.326 GiB, 82.45% gc time, 0.01% compilation time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6668056831947733
+ρ = 3.0
+Computing domain hierarchy.
+  9.827530 seconds (61.53 M allocations: 3.099 GiB, 0.05% gc time)
+Computing basis functions.
+ 26.189954 seconds (47.97 M allocations: 10.695 GiB, 5.17% gc time)
+Computing multicolor ordering.
+792.569588 seconds (8.75 G allocations: 279.743 GiB, 6.26% gc time)
+Measurements
+Number of measurements used is 2416
+Reconstruction.
+3700.144473 seconds (4.83 G allocations: 372.968 GiB, 82.33% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6668056831947733
+ρ = 4.0
+Computing domain hierarchy.
+ 16.290466 seconds (61.53 M allocations: 3.096 GiB, 42.98% gc time)
+Computing basis functions.
+ 54.746366 seconds (47.97 M allocations: 10.578 GiB, 57.59% gc time)
+Computing multicolor ordering.
+1790.157266 seconds (19.93 G allocations: 637.615 GiB, 13.12% gc time)
+Measurements
+Number of measurements used is 4939
+Reconstruction.
+6662.597447 seconds (9.88 G allocations: 748.929 GiB, 81.03% gc time)
+25671.322863 seconds (16.55 M allocations: 118.840 GiB, 0.12% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6668056831947735
+ρ = 5.0
+Computing domain hierarchy.
+ 14.571206 seconds (61.53 M allocations: 3.096 GiB, 38.48% gc time)
+Computing basis functions.
+ 48.310042 seconds (47.97 M allocations: 10.578 GiB, 54.01% gc time)
+Computing multicolor ordering.
+3415.111206 seconds (37.34 G allocations: 1.189 TiB, 12.37% gc time)
+Measurements
+Number of measurements used is 8535
+Reconstruction.
+11416.681224 seconds (17.07 G allocations: 1.270 TiB, 81.45% gc time)
+nrm = sum(mapslices(norm, x' * (A * x), dims = 1)) / number_trials = 0.6668056831947733
+ρ = 6.0
+Computing domain hierarchy.
+ 14.070237 seconds (61.53 M allocations: 3.096 GiB, 37.98% gc time)
+Computing basis functions.
+ 47.516401 seconds (47.97 M allocations: 10.578 GiB, 53.49% gc time)
+Computing multicolor ordering.
+5511.812063 seconds (61.89 G allocations: 1.923 TiB, 12.15% gc time)
+Measurements
+Number of measurements used is 13490
+Reconstruction.
+---------------------------------------
+Begin PBS Epilogue Fri Oct 21 23:29:26 EDT 2022
+Job ID:     5069395.sched-torque.pace.gatech.edu
+User ID:    fschaefer7
+Job name:   reconstructing_solvers
+Resources:  nodes=1:ppn=24,pmem=31gb,walltime=96:00:00,neednodes=1:ppn=24
+Rsrc Used:  cput=153:34:16,vmem=883921612kb,walltime=46:48:21,mem=760322612kb,energy_used=0
+Queue:      inferno
+Nodes:     
+atl1-1-02-003-22-l.pace.gatech.edu
+End PBS Epilogue Fri Oct 21 23:29:26 EDT 2022
+---------------------------------------
